@@ -1,0 +1,6 @@
+opencv-python
+mediapipe
+ultralytics
+filterpy
+simple-pid
+pymavlink
