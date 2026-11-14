@@ -1,6 +1,5 @@
 import cv2 as cv
 
-stream = cv.VideoCapture(0)
 
 if not stream.isOpened():
     print("No stream :(")
@@ -15,9 +14,14 @@ while(True):
 
     cv.imshow("Webcam", frame)
 
-    if cv.waitKey(1) == ord('q'):
+    if cv.waitKey(1) == ord ('q'):
         break
 
 stream.release()
 cv.destroyAllWindows()
 
+class VideoStream:
+
+    def __init__(self, frame):
+        self.stream = cv.VideoCapture(0)
+        self.latest_frame = frame
