@@ -25,7 +25,7 @@ class Tracker:
             return []
 
         ids = result.boxes.id
-        kps = result.keypoints.xy
+        kps = result.keypoints.data
         boxes = result.boxes.xyxy
 
         for person_id, box, keypoints in zip(ids, boxes, kps):
