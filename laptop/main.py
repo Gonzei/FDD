@@ -4,8 +4,8 @@ import tracker
 
 
 def main():
-    source = "rtsp://camera:8554/cam"
-    vstream = stream.VideoStream(source=source)
+    #source = "rtsp://camera:8554/cam"
+    vstream = stream.VideoStream()
     ptracker = tracker.Tracker()
 
     try:
